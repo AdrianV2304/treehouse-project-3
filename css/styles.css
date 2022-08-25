@@ -42,8 +42,6 @@ fieldset {
   padding-top: 10px;
 }
 
-
-
 fieldset label, select {
   margin-bottom: 10px;
 }
@@ -141,11 +139,6 @@ footer {
   width: 50%;
 }
 
-.zip {
-  display: flex;
-  flex-direction: column;
-}
-
 select {
   font-style: italic;
 }
@@ -185,19 +178,8 @@ select {
     margin: auto;
   }
 
-  .inputs input, select {
+  .inputs input, select, .zip {
     max-width: 600px;
-  }
-
-  .zip input {
-    width: 25%;
-    margin-left: auto;
-    margin-right: 25%;
-  }
-
-  .zip {
-    display: flex;
-    flex-direction: column;
   }
 
   .first-form {
@@ -206,7 +188,7 @@ select {
   }
 
   .first-form label {
-    max-width: 20%;
+    max-width: 160px;
     margin: 12px 0;
     padding: 12px 0;
   }
@@ -218,21 +200,14 @@ select {
     padding: 12px 0;
   }
 
-  .first-form div:last-child  {
-    justify-content: flex-start;
-
-  }
-
   .inputs {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .zip {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  .zip input {
+    width: 25%;
   }
 
 }
