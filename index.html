@@ -59,7 +59,7 @@
                   type="tel"
                   id="phone"
                   name="user-phone"
-                  placeholder="Required"
+                  placeholder="+1 123 456 7891"
                   required
                 />
               </div>
@@ -69,7 +69,7 @@
                   type="text"
                   id="address"
                   name="user-address"
-                  placeholder="Required"
+                  placeholder="123 Street Apartment"
                   required
                 />
               </div>
@@ -79,7 +79,7 @@
                   type="text"
                   id="city"
                   name="user-city"
-                  placeholder="Required"
+                  placeholder="City"
                   required
                 />
               </div>
@@ -98,15 +98,17 @@
                   <option value="georgia">Georgia</option>
                 </select>
               </div>
-              <div class="inputs zip">
+              <div class="inputs">
                 <label for="user-zip">Zip Code</label>
-                  <input
-                    type="text"
-                    id="user-zip"
-                    name="user-zip"
-                    placeholder="Required"
-                    required
-                  />
+                  <div class="zip">
+                    <input
+                      type="text"
+                      id="user-zip"
+                      name="user-zip"
+                      placeholder="00001"
+                      required
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -117,62 +119,73 @@
           <fieldset class="second">
             <div class="second-form">
               <legend>Newsletter</legend>
-              <label>Select the newsletters you would like to receive</label
-              ><br />
-              <input
-                type="checkbox"
-                id="html-news"
-                value="html_newsletter"
-                name="user-html-news"
-              />
-              <label for="html-news">HTML News</label><br />
-
-              <input
-                type="checkbox"
-                id="css-news"
-                value="css_newsletter"
-                name="user-css-news"
-              />
-              <label for="css-news">CSS News</label><br />
-
-              <input
-                type="checkbox"
-                id="javascript-news"
-                value="javascript_newsletter"
-                name="user-javascript-news"
-              />
-              <label for="javascript-news">Javascript News</label><br />
-
-              <label>Newsletter format</label><br />
-              <input
-                type="radio"
-                id="html"
-                value="html"
-                name="newsletter_format"
-              />
-              <label for="html" class="radio">HTML</label><br />
-              <input
-                type="radio"
-                id="plain"
-                value="plain_text"
-                name="newsletter_format"
-              />
-              <label for="plain" class="radio">Plain text</label><br />
-              <label for="topics">Other topics you'd like to hear about</label>
+              <div class="label_checkbox">
+                <label>Select the newsletters you would like to receive</label
+              ></div>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  id="html-news"
+                  value="html_newsletter"
+                  name="user-checkbox"
+                />
+                <label for="html-news">HTML News</label>
+              </div>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  id="css-news"
+                  value="css_newsletter"
+                  name="user-checkbox"
+                />
+                <label for="css-news">CSS News</label>
+              </div>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  id="javascript-news"
+                  value="javascript_newsletter"
+                  name="user-checkbox"
+                />
+                <label for="javascript-news">Javascript News</label>
+              </div>
+              <div class="label_radio">
+                <label>Newsletter format</label>
+              </div>
+              <div class="radio">
+                <input
+                  type="radio"
+                  id="html"
+                  value="html"
+                  name="newsletter_format"
+                />
+                <label for="html" class="radio">HTML</label>
+              </div>
+              <div class="radio">
+                <input
+                  type="radio"
+                  id="plain"
+                  value="plain_text"
+                  name="newsletter_format"
+                />
+                <label for="plain" class="radio">Plain text</label>
+              </div>
+              <div  class="topics_area">
+                <label for="topics">Other topics you'd like to hear about</label>
+              </div>
               <textarea
                 id="topics"
                 name="user_topics"
-                placeholder="Required"
+                placeholder="Share your thoughts with us..."
                 required
-              ></textarea
-              ><br />
+              ></textarea>
 
               <button type="submit">Sign Up</button>
             </div>
           </fieldset>
         </form>
 
-        <footer><em>Copyright The Code Review</em></footer>
+        <footer>Copyright The Code Review</footer>
       </div>
     </main>
   </body>
