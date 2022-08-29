@@ -45,6 +45,7 @@ fieldset {
 legend {
   font-weight: 700;
   margin-bottom: 12px;
+  margin-left: 84px;
 }
 
 textarea {
