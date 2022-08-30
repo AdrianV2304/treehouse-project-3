@@ -45,7 +45,7 @@ fieldset {
 legend {
   font-weight: 700;
   margin-bottom: 12px;
-  margin-left: 84px;
+  margin-left: 10px;
 }
 
 textarea {
@@ -207,6 +207,10 @@ footer {
     font-size: 0.75rem;
     margin-bottom: 40px;
     margin-top: 10px;
+  }
+
+  legend {
+    margin-left: 84px;
   }
 
   .second-form legend {
